@@ -13,7 +13,10 @@ function playVineBoom(){
     audio.play();
 }
 
-function playRaar(){
+function playRaar(word){
     const audio = new Audio("raar  arrr  yawn TikTok sound effect.mp3")
     audio.play();
+    if(word == 'string'){
+        console.log('word');
+    }
 }
