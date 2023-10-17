@@ -15,5 +15,26 @@ function playAudio(audioPick){
         const audio = new Audio("raar  arrr  yawn TikTok sound effect.mp3")
         audio.play();
     }
+    if(audioPick=='skatBoom'){
+        const audio = new Audio("Skibidi Bop Mm Dada Meme - Sound Effect (HD).mp3")
+        audio.play();
+    }
+    if(audioPick=='fartReverb'){
+        const audio = new Audio("fart reverb sound effect.mp3")
+        audio.play();
+    }
+    if(audioPick=='babaBoey'){
+        const audio = new Audio("BabaBooey sound.mp3")
+        audio.play();
+    }
+    if(audioPick=='huh'){
+        const audio = new Audio("_Huh (Sound effect).mp3")
+        audio.play();
+    }
+    if(audioPick=='snoring'){
+        const audio = new Audio("TikTok snoring (ORIGINAL MEME SOUND EFFECT) (1).mp3")
+        audio.play();
+    }
+    
     
 }
