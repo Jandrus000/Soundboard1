@@ -39,4 +39,8 @@ function playAudio(audioPick){
         const audio = new Audio("President Joe Biden says _SODA_.mp3")
         audio.play();
     }
+    if(audioPick=='obamna'){
+        const audio = new Audio("Trump OBAMNA original.mp3")
+        audio.play();
+    }
 }
