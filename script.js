@@ -28,13 +28,15 @@ function playAudio(audioPick){
         audio.play();
     }
     if(audioPick=='huh'){
-        const audio = new Audio("_Huh (Sound effect).mp3")
+        const audio = new Audio("HuhSoundeffect.mp3")
         audio.play();
     }
     if(audioPick=='snoring'){
         const audio = new Audio("TikTok snoring (ORIGINAL MEME SOUND EFFECT) (1).mp3")
         audio.play();
     }
-    
-    
+    if(audioPick=='soda'){
+        const audio = new Audio("President Joe Biden says _SODA_.mp3")
+        audio.play();
+    }
 }
