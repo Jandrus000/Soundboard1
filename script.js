@@ -1,3 +1,8 @@
+
+function muteAudio(){
+const audio = new Audio("BJ SNOWDEN IN CANADA.mp4")
+}
+
 function playAudio(audioPick){
     if(audioPick=='weekAgo'){
         const audio = new Audio("About A Week Ago -Sound Effect - Vine WSHH-.mp3");
@@ -44,3 +49,34 @@ function playAudio(audioPick){
         audio.play();
     }
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    const myAudio = new Audio("BJ SNOWDEN IN CANADA.mp4");
+    let audioPaused = false;
+
+    myAudio.addEventListener('ended', () => {
+        if (!audioPaused) {
+            myAudio.currentTime = 0;
+            myAudio.play();
+        }
+    });
+
+    myAudio.play();
+
+    const mute_button = document.getElementById("button");
+    mute_button.addEventListener('click', () => {
+        console.log("yo");
+        if (audioPaused) {
+            audioPaused = false;
+            myAudio.volume = 1.0; // Unmute audio
+            mute_button.src="./images/umute.jpg"
+        } else {
+            audioPaused = true;
+            myAudio.volume = 0.0; // Mute audio
+            mute_button.src="./images/mute.jpg"
+        }
+        console.log(audioPaused);
+    });
+});
+
+ 
